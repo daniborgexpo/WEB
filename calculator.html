@@ -18,18 +18,30 @@ body {
 h3 {
     color: maroon;
     margin-left: 40px;
-    font-family: Calibri;
+	font-family: Calibri;
 } 
 </style>
 </head>
 
-<h3>My Calculator</h3>
-
 <body>
-  Number:
-  <input type="text" id="n1"><p>
 
-  <button onclick="inverse()"> 1/x </button>
-  <button onclick="square()"> x<sup>2</sup> </button>
+<h1>Calculadora sencilla</h1>
+<br>
+
+<form name="calc">
+<input type="Text" id="numero1" name="operando1" value="0" size="12">
+<br>
+<input type="Text" id="numero2" name="operando2" value="0" size="12">
+<br>
+<input type="Button" name="" value=" + " onclick="calcula('+')">
+<input type="Button" name="" value=" - " onclick="calcula('-')">
+<input type="Button" name="" value=" X " onclick="calcula('*')">
+<input type="Button" name="" value=" / " onclick="calcula('/')">
+<br>
+<input type="Text" name="resultado" value="0" size="12">
+<input type="reset" value="C">
+</form>
+
+
 </body>
 </html>
